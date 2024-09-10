@@ -91,9 +91,25 @@ body{
     margin-bottom: 80px;
     user-select: none;
 }
+.installApp{
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #edeef0;
+    border: 1px solid #edeef0;
+    border-radius: 20px;
+    padding: 3px auto;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: all 0.5s;
+}
+.installApp:hover{
+    transform: scale(1.05);
+    background: #CF00FF;
+}
 
 .little-Intro{
-    color: #ffff;
+    color: #edeef0;
     text-align: center;
     margin-top: 30px;
     cursor: pointer;
@@ -101,15 +117,18 @@ body{
 .little-Intro a{
     text-decoration: none;
     color: #edeef0;
-    border: 1px solid #edeef0;
+    border-bottom: 3px solid #edeef0;
     border-radius: 20px;
     padding: 3px 7px;
-    transition: all 0.5s;
+    transition: all 0.5s ease;
 }
 .little-Intro a:hover{
-    border: 1px solid #edeef0;
-    background: #3315AF;
+    transform: scale(1.05);
+    border-bottom: 3px solid #edeef0;
+    background: #CF00FF;
 }
+
+
 
 /* Responsive Styles */
 /* For tablets (portrait) */
@@ -151,6 +170,9 @@ body{
     .input-box > button {
         padding: 18px 10px;
         border: 2px solid transparent;
+    }
+    .installApp:hover{
+        transform: rotateZ(360deg);
     }
 }
 
