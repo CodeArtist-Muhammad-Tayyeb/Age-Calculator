@@ -11,7 +11,7 @@
 body{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(to bottom, #ff512f, #dd2476);
+    background: linear-gradient(to bottom, #B40CE1, #3315AF);
     padding: 10px;
 }
 .container{
@@ -108,7 +108,7 @@ body{
 }
 .little-Intro a:hover{
     border: 1px solid #edeef0;
-    background: #EC4539;
+    background: #3315AF;
 }
 
 /* Responsive Styles */
