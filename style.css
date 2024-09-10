@@ -149,7 +149,8 @@ body{
         border: none;
     }
     .input-box > button {
-        padding: 7px 15px;
+        padding: 18px 10px;
+        border: 2px solid transparent;
     }
 }
 
