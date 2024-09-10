@@ -1,0 +1,169 @@
+@font-face {
+    font-family: myFont;
+    src: url(./Assest/Poppins-Regular.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: myFont;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #ff512f, #dd2476);
+    padding: 10px;
+}
+.container{
+    z-index: -1;
+    width: 100%;
+    max-width: 540px;
+    margin: 50px auto 20px;
+    padding: 40px 30px 40px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    animation: fadeIn 0.6s ease-out;
+    backdrop-filter: blur(1px) saturate(180%);
+    -webkit-backdrop-filter: blur(1px) saturate(180%);
+    border-radius: 12px;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.container h1{
+    z-index: 1;
+    color: #edeef0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.input-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    transition: all 0.5s;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    position: relative;
+    margin: 20px 0;
+}
+.input-box > input{
+    height: 40px;
+    font-size: 16px;
+    padding: 30px;
+    flex: 1;
+    outline: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    user-select: none;
+    background: #edeef0;
+    color: #2E3192;
+    transition: all 0.3s;
+    border: none;
+}
+
+.input-box > button{
+    border: 3px solid transparent;
+    color: #edeef0;
+    outline: none;
+    background: transparent;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.input-box > button:hover{
+    border: 3px solid #edeef0;
+    color: #edeef0;
+    background: transparent;
+}
+#result{
+    color: #edeef0;
+    font-size: 18px;
+    margin-top: 35px;
+    margin-left: 25px;
+    margin-bottom: 80px;
+    user-select: none;
+}
+
+.little-Intro{
+    color: #ffff;
+    text-align: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.little-Intro a{
+    text-decoration: none;
+    color: #edeef0;
+    border: 1px solid #edeef0;
+    border-radius: 20px;
+    padding: 3px 7px;
+    transition: all 0.5s;
+}
+.little-Intro a:hover{
+    border: 1px solid #edeef0;
+    background: #EC4539;
+}
+
+/* Responsive Styles */
+/* For tablets (portrait) */
+@media (max-width: 768px) {
+    .container {
+        max-width: 97%;
+        padding: 30px 20px;
+        margin: 60px auto 20px;
+        padding: 30px 80px;
+        max-height: 100vh;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 460px){
+    .container {
+        max-width: 95%;
+        padding: 20px 12px;
+        margin: 10px 10px 0 10px;
+        max-height: 100vh;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .input-box{
+        border: none;
+    }
+    .input-box > input{
+        width: 50%;
+        outline: none;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        user-select: none;
+        background: #edeef0;
+        color: #2E3192;
+        transition: all 0.3s;
+        border: none;
+    }
+    .input-box > button {
+        padding: 7px 15px;
+    }
+}
+
+/* For laptops and desktops */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .container {
+        max-width: 70%;
+        padding: 35px 25px;
+    }
+    .container > input {
+        padding: 25px;
+        font-size: 16px;
+    }
+    .input-box > button {
+        padding: 16px 45px;
+    }
+}
